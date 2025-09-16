@@ -19,3 +19,13 @@
         src: httpd.conf.j2
         dest: /etc/httpd.conf
         mode: 0644- 
+    - name: Write the apache config template file
+    - name: Write the apache config template file
+      ansible.builtin.template:
+        src: httpd.conf.j2
+        dest: /etc/httpd.conf
+        mode: 0644- 
+      ansible.builtin.template:
+        src: httpd.conf.j2
+        dest: /etc/httpd.conf
+        mode: 0644- 
