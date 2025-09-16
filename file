@@ -1,5 +1,21 @@
-My code client2
-My second code client1
+# site.yml
+---
+- name: Configure web server
+  hosts: all
+  become: true
 
+  vars:
+    http_port: 80
+    max_clients: 200
 
-Two code deleted c2
+  tasks:
+    - name: Install apache
+      ansible.builtin.package:
+        name: httpd
+        state: present
+
+    - name: Write the apache config template file
+      ansible.builtin.template:
+        src: httpd.conf.j2
+        dest: /etc/httpd.conf
+        mode: 0644- 
