@@ -2,6 +2,21 @@
 ---
 - name: Configure web server
   hosts: all
+  hosts: all
+  become: true
+
+  vars:
+    http_port: 80
+    max_clients: 200
+
+  tasks:
+    - name: Install apache
+      ansible.builtin.package:
+        name: httpd
+        state: present
+
+    - name: Write the apache config template file
+      ansible.builtin.template:
   become: true
 
   vars:
