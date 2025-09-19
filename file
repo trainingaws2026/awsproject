@@ -29,3 +29,11 @@
         src: httpd.conf.j2
         dest: /etc/httpd.conf
         mode: 0644- 
+      ansible.builtin.template:
+      ansible.builtin.template:
+        src: httpd.conf.j2
+        dest: /etc/httpd.conf
+        mode: 0644- 
+        src: httpd.conf.j2
+        dest: /etc/httpd.conf
+        mode: 0644- 
