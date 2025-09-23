@@ -3,6 +3,16 @@
 - name: Configure web server
   hosts: all
   hosts: all
+  hosts: all
+  become: true
+
+  vars:
+
+  vars:
+    http_port: 80
+    max_clients: 200
+
+  tasks:
   become: true
 
   vars:
