@@ -12,6 +12,16 @@
     max_clients: 200
 
   tasks:
+  tasks:
+    - name: Install apache
+      ansible.builtin.package:
+        name: httpd
+        state: present
+    http_port: 80
+    max_clients: 200
+
+  tasks:
+    - name: Install apache
     - name: Install apache
       ansible.builtin.package:
         name: httpd
