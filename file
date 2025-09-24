@@ -27,6 +27,11 @@
       ansible.builtin.package:
         name: httpd
         state: present
+        state: present
+    http_port: 80
+    max_clients: 200
+
+  tasks:
     http_port: 80
     max_clients: 200
 
