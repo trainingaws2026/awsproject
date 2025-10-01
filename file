@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+Version 1.2
+=======
 # site.yml
 ---
 - name: Configure web server
@@ -116,3 +119,4 @@ tasks:
       ansible.builtin.template:
     - name: Write the apache config template file
     - name: Write the apache config template file
+>>>>>>> ace14a06be316416f4ce80aedcb1b2e9fc6d0e2d
